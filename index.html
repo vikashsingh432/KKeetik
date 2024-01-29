@@ -9,6 +9,64 @@
 <link rel="stylesheet" 
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
+        box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16 px;
+  padding: 08 px;
+}
+
+.card {
+  box-shadow: 0 8px 16px 0 rgba(1.6, 1.6, 1.6, 1.6);
+  margin: 32px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: black;
+  color: pink;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: blue;
+}
+
+@media screen and (max-width: 5050px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
 main{
         background: linear-gradient(
             to right,
@@ -128,126 +186,229 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 
   <!-- Product grid -->
 
-   
+      <div class="row">
+  <div class="column">
+    <div class="card">
+      <div class="w3-container">
         <img src="VERSACE T-SHIRT PLUS SHORTS COMBO 1.1.jpg" style="width:100%" "height:150%">
         <p>
         <a href="Versace T-shirts plus shorts combo.html">VERSACE T-SHIRT </a><br><b>₹2000</b></p>
       </div>
+    </div>
+  </div>
+      </div>
+          
+            <div class="row">
+  <div class="column">
+    <div class="card">
       <div class="w3-container">
         <img src="PRADA Premium Shirt 1.1.jpg" style="width:100%" "height:150%">
         <p><a href="Prada premium shirts.html">PRADA Premium <br><b>₹1500</b></p>
       </div>
-    </div>
- 
- 
-        <div class="w3-display-container">
+ </div>
+       </div>
+ </div>   
+
+            <div class="row">
+  <div class="column">
+    <div class="card">
+        <div class="w3-container">
           <img src="Boss 1.1.jpg" style="width:100%" "height:150%">
           
-          
-        </div>
         <p><a href="Boss hoodies.html">Boss Hoodies<br><b>₹2000</b></p>
       </div>
+    </div>
+  </div>
+      </div>
+
+          <div class="row">
+  <div class="column">
+    <div class="card">
       <div class="w3-container">
         <img src="ARMANI PREMIUM QUALITY PRE-WINTER WEAR LOOPKNIT  1.1.jpg" style="width:100%">
     <p><a href="ARMANI PREMIUM QUALITY PRE-WINTER WEAR LOOPKNIT.html">ARMANI PREMIUM<br><b>₹1500</b></p>
       </div>
     </div>
+        </div>
+ </div>
 
-     
+          <div class="row">
+  <div class="column">
+    <div class="card">
+     <div class="w3-container">
         <img src="Burberry shirts 1.1.jpg" style="width:100%">
         <p>
         <a href="Burberry shirts.html">Burberry Shirts</a><br><b>₹1500</b></p>
       </div>
+    </div>
+  </div>
+      </div>
+
+            <div class="row">
+  <div class="column">
+    <div class="card">
       <div class="w3-container">
         <img src="balmain shirts 1.1.jpg" style="width:100%">
         <p><a href="balmain shirts.html">Balmin shirts<br><b>₹1500</b></p>
       </div>
     </div>
+  </div>
+      </div>
  
- 
-        <div class="w3-display-container">
+ <div class="row">
+  <div class="column">
+    <div class="card">
+        <div class="w3-container">
           <img src="zara hi neck pullover 1.1.jpg" style="width:100%">
-          
-          
-        </div>
+      
         <p><a href="zara hi neck pullover.html">Zara hi-neck<br><b>₹2000</b></p>
       </div>
+    </div>
+  </div>
+      </div>
+      
+
+          <div class="row">
+  <div class="column">
+    <div class="card">
       <div class="w3-container">
         <img src="Gucci tracksuit 1.1.jpg" style="width:100%">
     <p><a href="Gucci tracksuit.html">Gucci Tracksuit<br><b>₹4000</b></p>
       </div>
     </div>
+        </div>
+ </div>
 
+          <div class="row">
+  <div class="column">
+    <div class="card">
+        <div class="w3-container">
         <img src="/storage/emulated/0/kl keetik/img/index/i1.jpg" style="width:100%">
         <p>
         <a href="black shirt.html">Purple Shirt</a><br><b>₹1000</b></p>
       </div>
+    </div>
+  </div>
+      </div>
+
+            <div class="row">
+  <div class="column">
+    <div class="card">
       <div class="w3-container">
         <img src="/storage/emulated/0/kl keetik/img/index/i2.jpg" style="width:100%">
         <p>Red T-shirts<br><b>₹1000</b></p>
       </div>
     </div>
- 
- 
-        <div class="w3-display-container">
+ </div>
+ </div>
+
+            <div class="row">
+  <div class="column">
+    <div class="card">
+        <div class="w3-container">
           <img src="/storage/emulated/0/kl keetik/img/index/i3.jpg" style="width:100%">
-          
-          
-        </div>
+           
         <p>Black Full-length T-shirt<br><b>₹1000</b></p>
       </div>
+    </div>
+  </div>
+      </div>
+
+          <div class="row">
+  <div class="column">
+    <div class="card">
       <div class="w3-container">
         <img src="/storage/emulated/0/kl keetik/img/index/i4.jpg" style="width:100%">
     <p>Green Kurti<br><b>₹1000</b></p>
       </div>
     </div>
+        </div>
+ </div>
 
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <div class="w3-container">
         <img src="/storage/emulated/0/kl keetik/img/index/i1.jpg" style="width:100%">
         <p>
         <a href="black shirt.html">Purple Shirt</a><br><b>₹1000</b></p>
       </div>
+    </div>
+        </div>
+ </div>
+
+                   <div class="row">
+  <div class="column">
+    <div class="card"> 
       <div class="w3-container">
         <img src="/storage/emulated/0/kl keetik/img/index/i2.jpg" style="width:100%">
         <p>Red T-shirts<br><b>₹1000</b></p>
       </div>
     </div>
+        </div>
+ </div>
  
- 
-        <div class="w3-display-container">
+ <div class="row">
+  <div class="column">
+    <div class="card">
+        <div class="w3-container">
           <img src="/storage/emulated/0/kl keetik/img/index/i3.jpg" style="width:100%">
-               </div>
+               
         <p>Black Full-length T-shirt<br><b>₹1000</b></p>
       </div>
+    </div>
+        </div>
+ </div>
 
-
+<div class="row">
+  <div class="column">
+    <div class="card">
       <div class="w3-container">
         <img src="/storage/emulated/0/kl keetik/img/index/i4.jpg" style="width:100%">
     <p>Green Kurti<br><b>₹1000</b></p>
       </div>
     </div>
-
-      <div class="w3-container">
-        <div class="w3-display-container">
-          <img src="/storage/emulated/0/kl keetik/img/index/i3.jpg" style="width:100%">
-          
-          
         </div>
+ </div>
+
+          <div class="row">
+  <div class="column">
+    <div class="card">
+      <div class="w3-container">
+        <img src="/storage/emulated/0/kl keetik/img/index/i3.jpg" style="width:100%">
+        
         <p>Black Full-length T-shirt<br><b>₹1000</b></p>
       </div>
+    </div>
+        </div>
+ </div>
 
-
+          <div class="row">
+  <div class="column">
+    <div class="card">
+<div class="w3-container">
         <img src="/storage/emulated/0/kl keetik/img/index/i1.jpg" style="width:100%">
         <p>
         <a href="black shirt.html">Purple Shirt</a><br><b>₹1000</b></p>
       </div>
+    </div>
+        </div>
+ </div>
+
+            <div class="row">
+  <div class="column">
+    <div class="card">
       <div class="w3-container">
         <img src="/storage/emulated/0/kl keetik/img/index/i2.jpg" style="width:100%">
         <p>Red T-shirts<br><b>₹1000</b></p>
       </div>
     </div>
-
+</div>
+ </div>
  
- 
+ <div class="row">
+  <div class="column">
+    <div class="card">
         <div class="w3-display-container">
           <img src="/storage/emulated/0/kl keetik/img/index/i3.jpg" style="width:100%">
           
@@ -255,13 +416,21 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
         </div>
         <p>Black Full-length T-shirt<br><b>₹1000</b></p>
       </div>
+    </div>
+        </div>
+ </div>
+
+          <div class="row">
+  <div class="column">
+    <div class="card">
       <div class="w3-container">
         <img src="/storage/emulated/0/kl keetik/img/index/i4.jpg" style="width:100%">
     <p>Green Kurti<br><b>₹1000</b></p>
       </div>
     </div>
   </div>
-
+</div>
+ </div>
 
      
   <!-- Footer -->
