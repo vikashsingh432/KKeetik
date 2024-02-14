@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>TOMMY HILFIGER SWEATSHIRTS</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" 
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+main{
+        padding: 10px;
+        text-align: center;
+        color: black;
+        font-size: 1.5rem;
+    }
+h1{
+        padding: 1px;
+        text-align: center;
+        color: black;
+        font-size: 0.5 rem;
+    }
+h2{
+        padding: 10px;
+        text-align: center;
+        color: black;
+        font-size: 1.5 rem;
+    }
+h3{
+        padding: 10px;
+        text-align: left;
+        color: black;
+        font-size: 1.5 rem;
+    }
+p2{
+        padding: 10px;
+        text-align: left;
+        color: black;
+        font-size: 0.5 rem;
+    }
+p1{
+        padding: 1px;
+        text-align: left;
+        color: black;
+        font-size: 0.5 rem;
+    }
+nav
+{
+        background: linear-gradient(
+            to top,
+            Blue 0%,
+            White 50%,
+            White 75%,
+            Blue 100%
+        );
+        padding: 50px;
+        text-align: center;
+        color: silver;
+        font-size: 1.5rem;
+    }
+h4{
+        padding: 2px;
+        text-align: center;
+        color: black;
+        font-size:1.5rem;}
+h5{
+        padding: 2px;
+        text-align: center;
+        color: black;
+        font-size:1.5rem;
+    }
+div{
+        padding: 1px;
+        text-align: left;
+        color: blue;
+        font-size: 0.5 rem;
+    }
+.block {
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: blue;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid black;
+  text-align: left;
+  padding: 1px;
+}
+
+tr:nth-child(even) {
+  background-color: black;
+}
+* {box-sizing: border-box}
+.mySlides1, .mySlides2 {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+span {
+  padding: 2px;
+        text-align: left;
+        color: white;
+        font-size: 2rem;
+}
+.checked {
+  padding: 2px;
+        text-align: center;
+        color: orange;
+        font-size:1.5rem;
+}
+.w3-sidebar a {font-family: "Roboto", sans-serif}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+</style>
+</head>
+<body style="background: linear-gradient(
+            to bottom,
+            white 0%,
+            white 50%,
+            white 75%,
+            white 100%
+        );">
+
+<!-- Sidebar/menu -->
+<mark class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
+   <div class="w3-container w3-display-container w3-padding-16">
+    <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+    <h1 class="w3-wide"><b>KL KEETIK</b></h1>
+  </div>
+  <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
+   <li><a href="index.html">Home</a>
+   <li><a href="mens.html">Men</a>
+   <li><a href="womens.html">Women</a>
+   <li><a href="kids.html">Kids</a>
+   <a href="Accessories.html"></a>
+    <a href="living.html"></a>
+    <a href="beauty.html"></a>
+  </div>
+  <a href="#footer" class="w3-bar-item w3-button w3-padding">Contact</a> 
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding" onclick="document.getElementById('newsletter').style.display='block'">Newsletter</a> 
+  <a href="#footer"  class="w3-bar-item w3-button w3-padding">Subscribe</a>
+</mark>
+<!-- Top menu on small screens -->
+<header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+  <div class="w3-bar-item w3-padding-24 w3-wide">KL KEETIK</div>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:250px">
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+  
+  
+  
+  <!-- Top header -->
+  <header class="w3-container w3-large">
+    <p></p>
+    <p class="w3-right">
+
+<form action="" class="form-inline ml-auto d-none d-md-block">
+                <input type="text" name="search" id="search" placeholder="Search" class="form-control form-control-sm">
+<i class="fa fa-shopping-cart "></i>
+            </form>
+<p class="w3-left"></p>
+    </p>
+  </header>
+
+<!-- ***** Header Area End ***** -->
+
+    <!-- ***** Main Banner Area Start ***** -->
+    <div class="page-heading" id="top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="inner-content">
+<h3>TOMMY HILFIGER SWEATSHIRTS</h3>
+               <hr style="height:2px;border-width:0;color:white;background-color: black">
+                    
+<hr style="height:2px;border-width:0;color:gray;background-color: black">        
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ***** Main Banner Area End ***** -->
+
+
+    <!-- ***** Product Area Starts ***** -->
+    <section class="section" id="product">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                <div class="left-images">
+
+<div class="slideshow-container">
+  <div class="mySlides1">
+    <img src="p25 1.1.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides1">
+    <img src="p25 1.2.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides1">
+    <img src="p25 1.3.jpg" style="width:100%">
+  </div>
+<div class="mySlides1">
+    <img src="p25 1.4.jpg" style="width:100%">
+  </div>
+
+
+
+
+ <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+</div>
+<script>
+let slideIndex = [1,1];
+let slideId = ["mySlides1", "mySlides2"]
+showSlides(1, 0);
+showSlides(1, 1);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  let i;
+  let x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}    
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "block";  
+}
+</script>
+                    
+<hr style="height:2px;border-width:0;color:gray;background-color: black">
+<p2>MRP</p2>
+                    <h3>₹1999</h3>
+<p2>Inclusive of all taxes</p2>
+<hr style="height:2px;border-width:0;color:gray;background-color: black">
+<h3>FREE DELIVERY! </h3>
+<hr style="height:2px;border-width:0;color:gray;background-color: black">
+                    <table>
+<h4>Size Guide</h4>
+    <td>Standard size</td>
+    
+    <td>M</td>
+    <td>L</td>
+    <td>XL</td>
+    <td>XXL</td>
+  </tr>
+  <tr>
+    <td>Brand size</td>
+    
+    <td>38</td>
+<td>40</td>
+<td>42</td>
+<td>44</td>
+  </tr>
+</table>
+           <hr style="height:2px;border-width:0;color:gray;background-color: black">             
+<h2>Product Details</h2>
+                        
+                    <div class="quote">
+                        <p>BURBERRY PREMIUM QUALITY SHIRTS</p>
+
+
+<p>#2024 ONGOING STORE ARTICLE VD EMBROIDERY LOGO</p>
+REGULAR FIT IN THREE COLOURS
+<p>100 PERCENT MAFATLAL COTTON MILL MADE FABRIC</p> 
+WITH ORIGINAL BRAND BOX
+<p>WITH IMPORTED TICH BUTTONS
+</p>
+</nav>
+                    </div>
+                    <hr style="height:2px;border-width:0;color:white;background-color: black">
+                    
+<hr style="height:2px;border-width:0;color:gray;background-color: black">
+<a href="https://wa.me/919811573286?text=Hi,%20I%20Want%20To%20Buy%20P25%20"><button type="button" class="block">BUY NOW</button></a>
+     <hr style="height:2px;border-width:0;color:white;background-color: black">
+                    
+<hr style="height:2px;border-width:0;color:gray;background-color: black">
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Product Area Ends ***** -->
+    
+    <!-- ***** Footer Start ***** -->
+   
+
+                        <h2>REVIEWS</h2>
+                    </div>     
+<ul>        
+<ul>  
+<ul>
+                    <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star">4</span>
+</ul>
+</ul>
+</ul>
+         <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star">4</span>    
+<p></p>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star">4</span>    
+<p></p>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star">4</span>    
+<p></p>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star">4</span>    
+<p></p>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star">4</span>    
+<p></p>
+
+
+
+
+
+
+
+<hr style="height:2px;border-width:0;color:white;background-color: black">
+
+       
+                <hr style="height:2px;border-width:0;color:white;background-color: black">        
+    <section id="about">
+  <main class="section-inner">
+        
+
+<footer>
+<section id="store">
+      <main class="section-inner">
+ <h4>Store</h4>
+        <p><i class="fa fa-fw fa-map-marker"></i> Vikash Singh</p>
+        <p><i class="fa fa-fw fa-phone"></i>9811573286</p>
+        <p><i class="fa fa-fw fa-envelope"></i> klkeetik@gmail.com</p>
+        <h4>We accept</h4>
+        <p><i class="fa fa-fw fa-cc-amex"></i> Debit card</p>
+        <p><i class="fa fa-fw fa-credit-card"></i> Credit Card</p>
+        <br>
+        <i class="fa fa-facebook-official w3-hover-opacity w3-large"></i>
+        <i class="fa fa-instagram w3-hover-opacity w3-large"></i>
+        <i class="fa fa-snapchat w3-hover-opacity w3-large"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity w3-large"></i>
+
+    <i class="fa fa-twitter w3-hover-opacity w3-large"></i>
+        <i class="fa fa-linkedin w3-hover-opacity w3-large"></i>
+      </main>
+    </div>
+  </footer>
+
+  <!-- End page content -->
+</div>
+
+    <!-- jQuery -->
+    <script src="assets/js/jquery-2.1.0.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Plugins -->
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/accordions.js"></script>
+    <script src="assets/js/datepicker.js"></script>
+    <script src="assets/js/scrollreveal.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/imgfix.min.js"></script> 
+    <script src="assets/js/slick.js"></script> 
+    <script src="assets/js/lightbox.js"></script> 
+    <script src="assets/js/isotope.js"></script> 
+    <script src="assets/js/quantity.js"></script>
+    
+    <!-- Global Init -->
+    <script src="assets/js/custom.js"></script>
+
+    <script>
+
+        $(function() {
+            var selectedClass = "";
+            $("p").click(function(){
+            selectedClass = $(this).attr("data-rel");
+            $("#portfolio").fadeTo(50, 0.1);
+                $("#portfolio div").not("."+selectedClass).fadeOut();
+            setTimeout(function() {
+              $("."+selectedClass).fadeIn();
+              $("#portfolio").fadeTo(50, 1);
+            }, 500);
+                
+            });
+        });
+
+    </script>
+
+  </body>
+
+
+  <div class="w3-black w3-center w3-padding-24">© copyright 2023, KL KEETIK. All rights reserved.</a></div>
+
+  <!-- End page content -->
+</div>
+
+<!-- Newsletter Modal -->
+<div id="newsletter" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom" style="padding:32px">
+    <div class="w3-container w3-white w3-center">
+      <i onclick="document.getElementById('newsletter').style.display='none
+'" class="fa fa-remove w3-right w3-button w3-transparent w3-xxlarge"></i>
+      <h2 class="w3-wide">NEWSLETTER</h2>
+      <p>Join our mailing list to receive updates on new arrivals and special offers.</p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
+      <button type="button" class="w3-button w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('newsletter').style.display='none'">Subscribe</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// Accordion 
+function myAccFunc() {
+  var x = document.getElementById("demoAcc");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// Click on the "Jeans" link on page load to open the accordion for demo purposes
+document.getElementById("myBtn").click();
+// Open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+</body>
+</html>
+
+
+
+
+
+
+      
